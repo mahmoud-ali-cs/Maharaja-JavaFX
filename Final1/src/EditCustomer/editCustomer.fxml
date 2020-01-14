@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="editCostumer.EditCustomerController">
+  <children>
+    <Label layoutX="216.0" layoutY="37.0" text="Edit customer" />
+    <TextField id="costumerPhone" fx:id="name" layoutX="142.0" layoutY="173.0" prefWidth="200.0" />
+    <Button layoutX="142.0" layoutY="245.0" mnemonicParsing="false" onAction="#DeleteCostumer" text="Delete" />
+    <Button layoutX="280.0" layoutY="245.0" mnemonicParsing="false" onAction="#DoneCostumer" text="Done" />
+    <ComboBox fx:id="phone" layoutX="142.0" layoutY="109.0" onAction="#selectPhone" prefWidth="199.9998779296875">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label layoutX="68.0" layoutY="109.0" text="Phone:" />
+    <Label layoutX="68.0" layoutY="173.0" text="Name:" />
+  </children>
+</AnchorPane>

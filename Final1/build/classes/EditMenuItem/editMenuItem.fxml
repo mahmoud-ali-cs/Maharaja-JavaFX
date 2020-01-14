@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="EditMenuItem.editController">
+  <children>
+    <AnchorPane id="AnchorPane" layoutX="0.0" layoutY="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+      <children>
+        <Label layoutX="74.0" layoutY="151.0" text="Item name:" />
+        <Label layoutX="80.0" layoutY="102.0" text="Item id:" />
+        <Label layoutX="80.0" layoutY="207.0" text="Item class:" />
+        <Label layoutX="80.0" layoutY="263.0" text="Price:" />
+        <Label layoutX="224.0" layoutY="39.0" text="Edit Menu Item" />
+        <TextField id="itemId" fx:id="itemName" layoutX="176.0" layoutY="148.0" prefWidth="200.0" />
+        <TextField fx:id="price" layoutX="176.0" layoutY="263.0" prefWidth="200.0" />
+        <ComboBox fx:id="itemClass" layoutX="176.0" layoutY="205.0" prefWidth="200.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <Button layoutX="305.0" layoutY="327.0" mnemonicParsing="false" onAction="#DoneItem" text="Done" />
+        <ComboBox id="itemClass" fx:id="itemId" layoutX="176.0" layoutY="100.0" onAction="#itemIdAction" prefWidth="200.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <Button layoutX="176.0" layoutY="327.0" mnemonicParsing="false" onAction="#DeleteItem" text="Delete" />
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>

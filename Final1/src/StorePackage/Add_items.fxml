@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="307.0" prefWidth="432.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StorePackage.Add_itemsController">
+   <children>
+      <Label layoutX="126.0" layoutY="65.0" prefHeight="34.0" prefWidth="180.0" text="Add Item Name :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="add_item" layoutX="76.0" layoutY="119.0" onAction="#add_item_method" prefHeight="35.0" prefWidth="291.0" />
+      <Button fx:id="next" layoutX="188.0" layoutY="175.0" mnemonicParsing="false" onAction="#next_method" prefHeight="39.0" prefWidth="68.0" text="Next">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StorePackage.Stage1Controller">
+   <children>
+      <HBox prefHeight="43.0" prefWidth="600.0" style="-fx-border-color: gray;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Maharaja">
+               <font>
+                  <Font name="Aparajita" size="36.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </Text>
+            <HBox alignment="CENTER_RIGHT" prefHeight="141.0" prefWidth="575.0" spacing="15.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button fx:id="home" mnemonicParsing="false" onAction="#goToHome" text="Home" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </HBox>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="740.0">
+         <children>
+            <Button fx:id="delete_shipmet" layoutX="179.0" layoutY="69.0" mnemonicParsing="false" onAction="#delete_shipment_method" prefHeight="38.0" prefWidth="150.0" text="Delete Shipment">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="update_shipmet" layoutX="20.0" layoutY="69.0" mnemonicParsing="false" onAction="#update_shipment" prefHeight="38.0" prefWidth="150.0" text="Update Shipmet">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="add_shipmet" layoutX="21.0" layoutY="26.0" mnemonicParsing="false" onAction="#add_shipment_method" prefHeight="38.0" prefWidth="308.0" text="Add Shipment">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <TableView fx:id="tableView2" layoutX="22.0" layoutY="168.0" prefHeight="280.0" prefWidth="308.0">
+               <columns>
+                  <TableColumn fx:id="firstcolumn1" prefWidth="93.0" text="Shipment id" />
+                  <TableColumn fx:id="secondcolumn2" prefWidth="96.0" text="Item id" />
+                  <TableColumn fx:id="thirdcolumn3" prefWidth="111.0" text="Amount" />
+               </columns>
+            </TableView>
+            <Button fx:id="add_item" layoutX="357.0" layoutY="26.0" mnemonicParsing="false" onAction="#add_item_method" prefHeight="38.0" prefWidth="357.0" text="Add New Item">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="update_item" layoutX="357.0" layoutY="69.0" mnemonicParsing="false" onAction="#update_item_method" prefHeight="38.0" prefWidth="175.0" text="Update Amount">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="delete_item" layoutX="539.0" layoutY="69.0" mnemonicParsing="false" onAction="#delete_item_method" prefHeight="38.0" prefWidth="175.0" text="Delete Item">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <TableView fx:id="tableView" layoutX="354.0" layoutY="118.0" prefHeight="330.0" prefWidth="364.0">
+               <columns>
+                  <TableColumn fx:id="firstcolumn" prefWidth="61.0" text="Item id" />
+                  <TableColumn fx:id="secondcolumn" prefWidth="81.0" text="Item" />
+                  <TableColumn fx:id="thirdcolumn" prefWidth="107.0" text="Amount" />
+                  <TableColumn fx:id="forthtcolumn" prefWidth="59.0" text="Date" />
+                  <TableColumn fx:id="fifthtcolumn" prefWidth="59.0" text="Status" />
+               </columns>
+            </TableView>
+            <Button layoutX="21.0" layoutY="118.0" mnemonicParsing="false" onAction="#display_shipments_method" prefHeight="38.0" prefWidth="308.0" text="Display Shipments">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</VBox>
