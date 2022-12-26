@@ -6,5 +6,5 @@ Restaurant Management Application is a comprehensive software solution designed 
 
 - Java
 - JavaFX
-- Oracle
+- Oracle SQL
 - Git
